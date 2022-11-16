@@ -1,0 +1,77 @@
+﻿<Window x:Class="Practika7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practika7"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,2,6" RenderTransformOrigin="0.495,0.562">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas Grid.ColumnSpan="6" Grid.Row="0">
+            <Label Content="Последние документы" />
+            <Button Content="Открыть" Height="20" Width="50" Canvas.Bottom="6" Canvas.Right="0" Canvas.Left="140"/>
+            <Button Content="Сохранить" Height="20" Width="65" Canvas.Bottom="6" Canvas.Right="0" Canvas.Left="200"/>
+            <Button Content="Закрыть" Height="20" Width="50" Canvas.Bottom="6" Canvas.Right="0" Canvas.Left="275"/>
+            <Button Content="Обработать" Height="20" Width="70" Canvas.Bottom="6" Canvas.Right="0" Canvas.Left="335"/>
+            <Button Content="О программе" Height="20" Width="80" Canvas.Bottom="6" Canvas.Right="0" Canvas.Left="415"/>
+        </Canvas>
+        <Canvas Grid.Column="1" Grid.ColumnSpan="6" Grid.Row="1">
+            <Label Content="1.txt" />
+            <Label Content="2.txt" Canvas.Left="30"/>
+            <Label Content="3.txt" Canvas.Left="60"/>
+        </Canvas>
+        <WrapPanel Grid.Column="1" Grid.ColumnSpan="6" Grid.Row="2" Grid.RowSpan="7" >
+            <Border Background="Yellow" Width="50" Height="60"  Margin="10">
+                <TextBlock Text="A" VerticalAlignment="Center" TextAlignment="Center" />
+            </Border>
+
+            <Border Background="Red"  Width="50" Height="60"  Margin="10" >
+                <TextBlock Text="B" VerticalAlignment="Center" TextAlignment="Center"/>
+            </Border>
+
+            <Border Background="Green" Width="50" Height="60" Margin="10">
+                <TextBlock Text="C" VerticalAlignment="Center" TextAlignment="Center"/>
+            </Border>
+
+            <Border Background="Blue"  Width="50" Height="60" Margin="10">
+                <TextBlock Text="D" VerticalAlignment="Center" TextAlignment="Center"/>
+            </Border>
+
+            <Border Background="Gray"  Width="50" Height="60"  Margin="10">
+                <TextBlock Text="E" VerticalAlignment="Center" TextAlignment="Center"/>
+            </Border>
+
+            <Border Background="Khaki" Width="50" Height="60" Margin="10" >
+                <TextBlock Text="F" VerticalAlignment="Center" TextAlignment="Center"/>
+            </Border>
+
+        </WrapPanel>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="1.txt" />
+        <Label Grid.Row="2" Grid.Column="0" Content="2.txt" />
+        <Label Grid.Row="3" Grid.Column="0" Content="3.txt" />
+        <Label Grid.Row="4" Grid.Column="0" Content="4.txt"/>
+        <Label Grid.Row="5" Grid.Column="0" Content="5.txt"/>
+        <Label Grid.Row="6" Grid.Column="0" Content="6.txt"/>
+
+    </Grid>
+</Window>
